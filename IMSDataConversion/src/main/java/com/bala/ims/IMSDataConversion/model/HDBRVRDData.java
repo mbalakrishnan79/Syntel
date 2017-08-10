@@ -1,0 +1,215 @@
+package com.bala.ims.IMSDataConversion.model;
+
+import java.util.Arrays;
+import java.util.Date;
+
+public class HDBRVRDData {
+	private String HDBRVRD_VRBL_CAT;
+	private String HDBRVRD_VRBL_OPT;
+	private Date HDBRVRD_KEY_DTE;
+	private Date HDBRVRD_EFF_DTE;
+	private Date HDBRVRD_END_DTE;
+	private char HDBRVRD_STS_IND;
+	private char HDBRVRD_PRICING_IND;
+	private Date HDBRVRD_LAST_UPDTE_DTE;
+	private String HDBRVRD_LAST_USERID;
+	private char HDBRVRD_PROC_LVL_CDE;
+	private int HDBRVRD_PRIRTY_LVL;
+	private int HDBRVRD_VRBL_CNT;
+	private String[] HDBRVRD_VRBL_TYPE_CDE; //Array size 5
+	private String HDBRVRD_TXT_LINE_SHORT;
+	private String HDBRVRD_TXT_LINE_1;
+	private String HDBRVRD_TXT_LINE_2;
+	private String HDBRVRD_TXT_LINE_3;
+	private String HDBRVRD_TXT_LINE_4;
+	private String HDBRVRD_LAST_VRBL_OPT;
+	private char[] HDBRVRD_PLACE_OF_SVC_IND; //Array size 7
+	private String HDBRVRD_RVN_CDE;
+	private String HDBRVRD_CATEGORY_CDE;
+	private String[] HDBRVRD_LICENSURE_CDE; //Array size 10. Has element name as HDBRVRD_LIC_CDE
+	private String[] HDBRVRD_CONTRACT_CDE; //Array size is 10. Has element name as HDBRVRD_CONTR_CDE
+	
+	public HDBRVRDData() {
+		HDBRVRD_VRBL_TYPE_CDE = new String[5];
+		HDBRVRD_PLACE_OF_SVC_IND = new char[7];
+		HDBRVRD_LICENSURE_CDE = new String[10];
+		HDBRVRD_CONTRACT_CDE = new String[10];
+	}
+	
+	public String getHDBRVRD_VRBL_CAT() {
+		return HDBRVRD_VRBL_CAT;
+	}
+	public void setHDBRVRD_VRBL_CAT(String hDBRVRD_VRBL_CAT) {
+		HDBRVRD_VRBL_CAT = hDBRVRD_VRBL_CAT;
+	}
+	public String getHDBRVRD_VRBL_OPT() {
+		return HDBRVRD_VRBL_OPT;
+	}
+	public void setHDBRVRD_VRBL_OPT(String hDBRVRD_VRBL_OPT) {
+		HDBRVRD_VRBL_OPT = hDBRVRD_VRBL_OPT;
+	}
+	public Date getHDBRVRD_KEY_DTE() {
+		return HDBRVRD_KEY_DTE;
+	}
+	public void setHDBRVRD_KEY_DTE(Date hDBRVRD_KEY_DTE) {
+		HDBRVRD_KEY_DTE = hDBRVRD_KEY_DTE;
+	}
+	public Date getHDBRVRD_EFF_DTE() {
+		return HDBRVRD_EFF_DTE;
+	}
+	public void setHDBRVRD_EFF_DTE(Date hDBRVRD_EFF_DTE) {
+		HDBRVRD_EFF_DTE = hDBRVRD_EFF_DTE;
+	}
+	public Date getHDBRVRD_END_DTE() {
+		return HDBRVRD_END_DTE;
+	}
+	public void setHDBRVRD_END_DTE(Date hDBRVRD_END_DTE) {
+		HDBRVRD_END_DTE = hDBRVRD_END_DTE;
+	}
+	public char getHDBRVRD_STS_IND() {
+		return HDBRVRD_STS_IND;
+	}
+	public void setHDBRVRD_STS_IND(char hDBRVRD_STS_IND) {
+		HDBRVRD_STS_IND = hDBRVRD_STS_IND;
+	}
+	public char getHDBRVRD_PRICING_IND() {
+		return HDBRVRD_PRICING_IND;
+	}
+	public void setHDBRVRD_PRICING_IND(char hDBRVRD_PRICING_IND) {
+		HDBRVRD_PRICING_IND = hDBRVRD_PRICING_IND;
+	}
+	public Date getHDBRVRD_LAST_UPDTE_DTE() {
+		return HDBRVRD_LAST_UPDTE_DTE;
+	}
+	public void setHDBRVRD_LAST_UPDTE_DTE(Date hDBRVRD_LAST_UPDTE_DTE) {
+		HDBRVRD_LAST_UPDTE_DTE = hDBRVRD_LAST_UPDTE_DTE;
+	}
+	public String getHDBRVRD_LAST_USERID() {
+		return HDBRVRD_LAST_USERID;
+	}
+	public void setHDBRVRD_LAST_USERID(String hDBRVRD_LAST_USERID) {
+		HDBRVRD_LAST_USERID = hDBRVRD_LAST_USERID;
+	}
+	public char getHDBRVRD_PROC_LVL_CDE() {
+		return HDBRVRD_PROC_LVL_CDE;
+	}
+	public void setHDBRVRD_PROC_LVL_CDE(char hDBRVRD_PROC_LVL_CDE) {
+		HDBRVRD_PROC_LVL_CDE = hDBRVRD_PROC_LVL_CDE;
+	}
+	public int getHDBRVRD_PRIRTY_LVL() {
+		return HDBRVRD_PRIRTY_LVL;
+	}
+	public void setHDBRVRD_PRIRTY_LVL(int hDBRVRD_PRIRTY_LVL) {
+		HDBRVRD_PRIRTY_LVL = hDBRVRD_PRIRTY_LVL;
+	}
+	public int getHDBRVRD_VRBL_CNT() {
+		return HDBRVRD_VRBL_CNT;
+	}
+	public void setHDBRVRD_VRBL_CNT(int hDBRVRD_VRBL_CNT) {
+		HDBRVRD_VRBL_CNT = hDBRVRD_VRBL_CNT;
+	}
+	public String[] getHDBRVRD_VRBL_TYPE_CDE() {
+		return HDBRVRD_VRBL_TYPE_CDE;
+	}
+	public void setHDBRVRD_VRBL_TYPE_CDE(String[] hDBRVRD_VRBL_TYPE_CDE) {
+		HDBRVRD_VRBL_TYPE_CDE = hDBRVRD_VRBL_TYPE_CDE;
+	}
+	public String getHDBRVRD_TXT_LINE_SHORT() {
+		return HDBRVRD_TXT_LINE_SHORT;
+	}
+	public void setHDBRVRD_TXT_LINE_SHORT(String hDBRVRD_TXT_LINE_SHORT) {
+		HDBRVRD_TXT_LINE_SHORT = hDBRVRD_TXT_LINE_SHORT;
+	}
+	public String getHDBRVRD_TXT_LINE_1() {
+		return HDBRVRD_TXT_LINE_1;
+	}
+	public void setHDBRVRD_TXT_LINE_1(String hDBRVRD_TXT_LINE_1) {
+		HDBRVRD_TXT_LINE_1 = hDBRVRD_TXT_LINE_1;
+	}
+	public String getHDBRVRD_TXT_LINE_2() {
+		return HDBRVRD_TXT_LINE_2;
+	}
+	public void setHDBRVRD_TXT_LINE_2(String hDBRVRD_TXT_LINE_2) {
+		HDBRVRD_TXT_LINE_2 = hDBRVRD_TXT_LINE_2;
+	}
+	public String getHDBRVRD_TXT_LINE_3() {
+		return HDBRVRD_TXT_LINE_3;
+	}
+	public void setHDBRVRD_TXT_LINE_3(String hDBRVRD_TXT_LINE_3) {
+		HDBRVRD_TXT_LINE_3 = hDBRVRD_TXT_LINE_3;
+	}
+	public String getHDBRVRD_TXT_LINE_4() {
+		return HDBRVRD_TXT_LINE_4;
+	}
+	public void setHDBRVRD_TXT_LINE_4(String hDBRVRD_TXT_LINE_4) {
+		HDBRVRD_TXT_LINE_4 = hDBRVRD_TXT_LINE_4;
+	}
+	public String getHDBRVRD_LAST_VRBL_OPT() {
+		return HDBRVRD_LAST_VRBL_OPT;
+	}
+	public void setHDBRVRD_LAST_VRBL_OPT(String hDBRVRD_LAST_VRBL_OPT) {
+		HDBRVRD_LAST_VRBL_OPT = hDBRVRD_LAST_VRBL_OPT;
+	}
+	public char[] getHDBRVRD_PLACE_OF_SVC_IND() {
+		return HDBRVRD_PLACE_OF_SVC_IND;
+	}
+	public void setHDBRVRD_PLACE_OF_SVC_IND(char[] hDBRVRD_PLACE_OF_SVC_IND) {
+		HDBRVRD_PLACE_OF_SVC_IND = hDBRVRD_PLACE_OF_SVC_IND;
+	}
+	public String getHDBRVRD_RVN_CDE() {
+		return HDBRVRD_RVN_CDE;
+	}
+	public void setHDBRVRD_RVN_CDE(String hDBRVRD_RVN_CDE) {
+		HDBRVRD_RVN_CDE = hDBRVRD_RVN_CDE;
+	}
+	public String getHDBRVRD_CATEGORY_CDE() {
+		return HDBRVRD_CATEGORY_CDE;
+	}
+	public void setHDBRVRD_CATEGORY_CDE(String hDBRVRD_CATEGORY_CDE) {
+		HDBRVRD_CATEGORY_CDE = hDBRVRD_CATEGORY_CDE;
+	}
+	public String[] getHDBRVRD_LICENSURE_CDE() {
+		return HDBRVRD_LICENSURE_CDE;
+	}
+	public void setHDBRVRD_LICENSURE_CDE(String[] hDBRVRD_LICENSURE_CDE) {
+		HDBRVRD_LICENSURE_CDE = hDBRVRD_LICENSURE_CDE;
+	}
+	public String[] getHDBRVRD_CONTRACT_CDE() {
+		return HDBRVRD_CONTRACT_CDE;
+	}
+	public void setHDBRVRD_CONTRACT_CDE(String[] hDBRVRD_CONTRACT_CDE) {
+		HDBRVRD_CONTRACT_CDE = hDBRVRD_CONTRACT_CDE;
+	}
+
+	@Override
+	public String toString() {
+		return "HDBRVRDData [HDBRVRD_VRBL_CAT=" + HDBRVRD_VRBL_CAT
+				+ ", HDBRVRD_VRBL_OPT=" + HDBRVRD_VRBL_OPT
+				+ ", HDBRVRD_KEY_DTE=" + HDBRVRD_KEY_DTE + ", HDBRVRD_EFF_DTE="
+				+ HDBRVRD_EFF_DTE + ", HDBRVRD_END_DTE=" + HDBRVRD_END_DTE
+				+ ", HDBRVRD_STS_IND=" + HDBRVRD_STS_IND
+				+ ", HDBRVRD_PRICING_IND=" + HDBRVRD_PRICING_IND
+				+ ", HDBRVRD_LAST_UPDTE_DTE=" + HDBRVRD_LAST_UPDTE_DTE
+				+ ", HDBRVRD_LAST_USERID=" + HDBRVRD_LAST_USERID
+				+ ", HDBRVRD_PROC_LVL_CDE=" + HDBRVRD_PROC_LVL_CDE
+				+ ", HDBRVRD_PRIRTY_LVL=" + HDBRVRD_PRIRTY_LVL
+				+ ", HDBRVRD_VRBL_CNT=" + HDBRVRD_VRBL_CNT
+				+ ", HDBRVRD_VRBL_TYPE_CDE="
+				+ Arrays.toString(HDBRVRD_VRBL_TYPE_CDE)
+				+ ", HDBRVRD_TXT_LINE_SHORT=" + HDBRVRD_TXT_LINE_SHORT
+				+ ", HDBRVRD_TXT_LINE_1=" + HDBRVRD_TXT_LINE_1
+				+ ", HDBRVRD_TXT_LINE_2=" + HDBRVRD_TXT_LINE_2
+				+ ", HDBRVRD_TXT_LINE_3=" + HDBRVRD_TXT_LINE_3
+				+ ", HDBRVRD_TXT_LINE_4=" + HDBRVRD_TXT_LINE_4
+				+ ", HDBRVRD_LAST_VRBL_OPT=" + HDBRVRD_LAST_VRBL_OPT
+				+ ", HDBRVRD_PLACE_OF_SVC_IND="
+				+ Arrays.toString(HDBRVRD_PLACE_OF_SVC_IND)
+				+ ", HDBRVRD_RVN_CDE=" + HDBRVRD_RVN_CDE
+				+ ", HDBRVRD_CATEGORY_CDE=" + HDBRVRD_CATEGORY_CDE
+				+ ", HDBRVRD_LICENSURE_CDE="
+				+ Arrays.toString(HDBRVRD_LICENSURE_CDE)
+				+ ", HDBRVRD_CONTRACT_CDE="
+				+ Arrays.toString(HDBRVRD_CONTRACT_CDE) + "]";
+	}
+	
+}

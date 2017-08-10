@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">com.ibm.db2.jcc.DB2Driver</property>
+        <property name="hibernate.connection.password">Qvz#17zR</property>
+        <property name="hibernate.connection.url">jdbc:db2://va10tuvdb2022:60000/EPEPOCDB</property>
+        <property name="hibernate.connection.username">emdpfinf</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.DB2Dialect</property>
+        <property name="show_sql">true</property>
+
+        <mapping class="com.bala.ims.IMSDataConversion.dao.model.HDBPRHCDao"></mapping>
+    </session-factory>
+</hibernate-configuration>
